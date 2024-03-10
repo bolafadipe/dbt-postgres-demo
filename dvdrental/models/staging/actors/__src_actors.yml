@@ -1,0 +1,37 @@
+version: 2
+sources:
+  - name: public
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: actor
+        config:
+          alias: actors
+        description: |
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: actor_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: actor_name
+            description: ""
+            tests:
+              - unique
+              - not_null
+          - name: actor_last_updated_at
+            description: ""
+models:
+  - name: base_public_actors
+    description: This table provides details about each actor and the date of last update.
+    columns:
+      - name: actor_id
+        description: Unique identifier for each actor
+        data_type: integer
+      - name: actor_name
+        description: Actors' fullname derived from the concatenation of the first_name
+          and last_name columns of the source table in the database.
+        data_type: text
+      - name: actor_last_updated_at
+        description: date of last update.
+        data_type: timestamp without time zone
