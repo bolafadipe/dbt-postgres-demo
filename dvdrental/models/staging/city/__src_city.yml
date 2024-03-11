@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: public
+    database: dvdrental  
+    tables:
+      - name: city
+        columns:
+          - name: city_id
+            description: Primary key of the city table
+            tests:
+              - unique
+              - not_null
+         

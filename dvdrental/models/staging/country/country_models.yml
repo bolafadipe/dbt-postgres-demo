@@ -1,0 +1,25 @@
+models:
+  - name: base_public_country
+    description: countries table
+    columns:
+      - name: country_id
+        description: ""
+        data_type: integer
+      - name: country
+        description: ""
+        data_type: character varying
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+  - name: stg_countries
+    description: ""
+    columns:
+      - name: country_id
+        description: ""
+        data_type: integer
+      - name: country
+        description: ""
+        data_type: character varying
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone

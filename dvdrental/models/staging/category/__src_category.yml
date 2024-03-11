@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: public
+    database: dvdrental  
+    tables:
+      - name: category
+        columns:
+          - name: category_id
+            description: Primary key of the category table
+            tests:
+              - unique
+              - not_null
+         

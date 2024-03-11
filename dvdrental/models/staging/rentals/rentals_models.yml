@@ -1,0 +1,46 @@
+models:
+  - name: base_public_rental
+    description: base model for rental source table
+    columns:
+      - name: rental_id
+        description: ""
+        data_type: integer
+      - name: rental_date
+        description: ""
+        data_type: timestamp without time zone
+      - name: inventory_id
+        description: ""
+        data_type: integer
+      - name: customer_id
+        description: ""
+        data_type: smallint
+      - name: return_date
+        description: ""
+        data_type: timestamp without time zone
+      - name: staff_id
+        description: ""
+        data_type: smallint
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+  - name: stg_rentals
+    description: cleaned rental table
+    columns:
+      - name: rental_id
+        description: ""
+        data_type: integer
+      - name: customer_id
+        description: ""
+        data_type: smallint
+      - name: staff_id
+        description: ""
+        data_type: smallint
+      - name: rental_date
+        description: ""
+        data_type: timestamp without time zone
+      - name: rental_return_date
+        description: ""
+        data_type: timestamp without time zone
+      - name: last_updated_at
+        description: ""
+        data_type: timestamp without time zone

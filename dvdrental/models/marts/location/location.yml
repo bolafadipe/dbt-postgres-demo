@@ -1,0 +1,37 @@
+models:
+  - name: locations
+    description: location table
+    columns:
+      - name: address_id
+        description: ""
+        data_type: integer
+      - name: city_id
+        description: ""
+        data_type: integer
+      - name: country_id
+        description: ""
+        data_type: integer
+      - name: address
+        description: ""
+        data_type: character varying
+      - name: district
+        description: ""
+        data_type: character varying
+      - name: city
+        description: ""
+        data_type: character varying
+      - name: country
+        description: ""
+        data_type: character varying
+      - name: postal_code
+        description: ""
+        data_type: character varying
+      - name: address_last_updated_at
+        description: ""
+        data_type: timestamp without time zone
+      - name: city_last_updated_at
+        description: ""
+        data_type: timestamp without time zone
+      - name: country_last_updated_at
+        description: ""
+        data_type: timestamp without time zone

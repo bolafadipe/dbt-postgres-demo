@@ -1,0 +1,33 @@
+models:
+  - name: base_public_city
+    description: ""
+    columns:
+      - name: city_id
+        description: ""
+        data_type: integer
+      - name: city
+        description: ""
+        data_type: character varying
+      - name: country_id
+        description: ""
+        data_type: smallint
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+  - name: stg_city
+    description: ""
+    columns:
+      - name: city_id
+        description: ""
+        data_type: integer
+      - name: city_name
+        description: ""
+        data_type: character varying
+      - name: country_id
+        description: ""
+        data_type: smallint
+      - name: city_last_updated_at
+        description: ""
+        data_type: timestamp without time zone
+    relationships:
+      - { from: 'city_id', to: 'address.city_id' }

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: public
+    database: dvdrental  
+    tables:
+      - name: store
+        columns:
+          - name: store_id
+            description: Primary key of the store table
+            tests:
+              - unique
+              - not_null
+         

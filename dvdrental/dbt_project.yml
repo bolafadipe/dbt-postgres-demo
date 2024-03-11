@@ -39,4 +39,5 @@ models:
     intermediate:
       +materialized: ephemeral
     marts:
+      +schema: marts
       +materialized: table

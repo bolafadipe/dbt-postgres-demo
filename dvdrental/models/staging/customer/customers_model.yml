@@ -1,0 +1,58 @@
+models:
+  - name: base_public_customer
+    description: customer's table
+    columns:
+      - name: customer_id
+        description: ""
+        data_type: integer
+      - name: store_id
+        description: ""
+        data_type: smallint
+      - name: first_name
+        description: ""
+        data_type: character varying
+      - name: last_name
+        description: ""
+        data_type: character varying
+      - name: email
+        description: ""
+        data_type: character varying
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: activebool
+        description: ""
+        data_type: boolean
+      - name: create_date
+        description: ""
+        data_type: date
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+      - name: active
+        description: ""
+        data_type: integer
+  - name: stg_customers
+    description: customer's table
+    columns:
+      - name: customer_id
+        description: ""
+        data_type: integer
+      - name: store_id
+        description: ""
+        data_type: smallint
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: customer_name
+        description: ""
+        data_type: text
+      - name: is_active
+        description: ""
+        data_type: integer
+      - name: customer_created_at
+        description: ""
+        data_type: date
+      - name: customer_last_updated_at
+        description: ""
+        data_type: timestamp without time zone

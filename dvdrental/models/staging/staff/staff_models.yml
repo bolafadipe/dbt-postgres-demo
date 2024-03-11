@@ -1,0 +1,58 @@
+models:
+  - name: base_public_staff
+    description: ""
+    columns:
+      - name: staff_id
+        description: ""
+        data_type: integer
+      - name: first_name
+        description: ""
+        data_type: character varying
+      - name: last_name
+        description: ""
+        data_type: character varying
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: email
+        description: ""
+        data_type: character varying
+      - name: store_id
+        description: ""
+        data_type: smallint
+      - name: active
+        description: ""
+        data_type: boolean
+      - name: username
+        description: ""
+        data_type: character varying
+      - name: password
+        description: ""
+        data_type: character varying
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+      - name: picture
+        description: ""
+        data_type: bytea
+  - name: stg_staff
+    description: ""
+    columns:
+      - name: staff_id
+        description: ""
+        data_type: integer
+      - name: store_id
+        description: ""
+        data_type: smallint
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: staff_name
+        description: ""
+        data_type: text
+      - name: staff_is_active
+        description: ""
+        data_type: boolean
+      - name: staff_last_updated_at
+        description: ""
+        data_type: timestamp without time zone

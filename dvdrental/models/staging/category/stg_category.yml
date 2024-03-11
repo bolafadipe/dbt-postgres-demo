@@ -1,0 +1,25 @@
+models:
+  - name: base_public_category
+    description: table of movie categories
+    columns:
+      - name: category_id
+        description: unique identifier
+        data_type: integer
+      - name: name
+        description: category name.
+        data_type: character varying
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+  - name: stg_category
+    description: cleaned category table.
+    columns:
+      - name: category_id
+        description: unique id
+        data_type: integer
+      - name: category_name
+        description: category name renamed from the 'name' column in the source table
+        data_type: character varying
+      - name: category_last_updated_at
+        description: "last update of the categories "
+        data_type: timestamp without time zone

@@ -1,0 +1,28 @@
+models:
+  - name: base_public_store
+    description: base model for store table
+    columns:
+      - name: store_id
+        description: ""
+        data_type: integer
+      - name: manager_staff_id
+        description: ""
+        data_type: smallint
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: last_update
+        description: ""
+        data_type: timestamp without time zone
+  - name: stg_stores
+    description: cleaned store table
+    columns:
+      - name: store_id
+        description: ""
+        data_type: integer
+      - name: address_id
+        description: ""
+        data_type: smallint
+      - name: last_updated_at
+        description: ""
+        data_type: timestamp without time zone
